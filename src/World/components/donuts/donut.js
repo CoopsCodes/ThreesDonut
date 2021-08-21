@@ -11,6 +11,7 @@ async function loadDonuts() {
 
   const donut = setupModel(donutData);
   donut.position.set(0, 0, 2.5);
+  donut.scale.set(20, 20, 20);
 
   return { donut };
 }
