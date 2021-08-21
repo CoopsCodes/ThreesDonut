@@ -1,7 +1,7 @@
-import { loadDonuts } from "./components/donuts/donut";
-import { createScene } from "./components/scene";
-import { createLights } from "./components/lights";
-import { createCamera } from "./components/camera";
+import { loadDonuts } from "../components/donuts/donut";
+import { createScene } from "../components/scene";
+import { createLights } from "../components/lights";
+import { createCamera } from "../components/camera";
 
 import { Loop } from "./systems/Loop";
 import { Resizer } from "./systems/Resizer";
