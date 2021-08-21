@@ -1,5 +1,5 @@
 import "./style.css";
-import { World } from "./World/World";
+import { World } from "./src/World/World";
 
 async function main() {
   const container = document.querySelector("#scene-container");
