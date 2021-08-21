@@ -1,12 +1,12 @@
-import { loadDonuts } from "./components/donuts/donut";
-import { createScene } from "./components/scene";
-import { createLights } from "./components/lights";
-import { createCamera } from "./components/camera";
+import { loadDonuts } from "../components/donuts/donut";
+import { createScene } from "../components/scene";
+import { createLights } from "../components/lights";
+import { createCamera } from "../components/camera";
 
-import { Loop } from "./systems/Loop";
-import { Resizer } from "./systems/Resizer";
-import { createControls } from "./systems/controls";
-import { createRenderer } from "./systems/renderer";
+import { Loop } from "../systems/Loop";
+import { Resizer } from "../systems/Resizer";
+import { createControls } from "../systems/controls";
+import { createRenderer } from "../systems/renderer";
 
 let camera;
 let controls;
@@ -32,7 +32,6 @@ class World {
   }
   async init() {
     const { donut } = await loadDonuts();
-    console.log({ donut });
 
     controls.target.copy(donut.position);
 

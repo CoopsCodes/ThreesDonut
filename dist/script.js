@@ -1,4 +1,3 @@
-import "./style.css";
 import { World } from "../src/World/World";
 
 async function main() {
